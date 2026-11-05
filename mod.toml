@@ -1,0 +1,17 @@
+[manifest]
+id = "hajaga"
+version = "1.0.0"
+display_name = "Beta Lanky Noise"
+description = "Replaces the sound effect of Lanky's spin attack with the beta version"
+short_description = "Replaces the sound effect of Lanky's spin attack with the beta version"
+authors = [ "Ballaam" ]
+game_id = "dk64"
+minimum_recomp_version = "1.0.0"
+dependencies = ["audio_tools:1.0.0"]
+
+[inputs]
+elf_path = "build/mod.elf"
+mod_filename = "hajaga"
+func_reference_syms_file = "Dk64Syms/dump.toml"
+data_reference_syms_files = [ "Dk64Syms/data_dump.toml" ]
+additional_files = ["thumb.dds"]
